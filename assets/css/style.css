@@ -17,8 +17,27 @@
     --border-regular: #EFEFEF;
 }
 body,html{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.screen{
+    left:0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.new_screen{
+    left:200%;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.change_screen{
+    animation: 1s swap;
+    left: 0%;
 }
 .screen_load{
     background-color: var(--border-regular);
