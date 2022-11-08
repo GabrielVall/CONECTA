@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sensores</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>CONECTA</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="fondo">
-            <div class="circulo">
-                I
+    <div class="screen_load">
+        <div class="logo_area">
+            <div class="logo">
+                <img src="assets/img/logo_white.png">
             </div>
-            <div class="titulo">
-                Your <span>App</span>
+            <div class="logo_title">
+                CONECTA
             </div>
         </div>
     </div>
