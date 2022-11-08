@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="new_screen">
-        <div class="screen_load" style="background:red">
+        <div class="screen_load">
             <div class="logo_area">
                 <div class="logo">
                     <img src="assets/img/logo_white.png">
