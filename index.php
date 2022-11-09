@@ -93,6 +93,10 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="last_update">
+                    <p>Ultima actualización: 10:02 AM 9/11/2022</p>
+                </div>
             </div>
         </div>
     </div>
