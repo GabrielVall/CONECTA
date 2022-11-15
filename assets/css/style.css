@@ -16,6 +16,8 @@
     --white: #FFFF;
     --border-regular: #EFEFEF;
     --border-semi-bold: #DADADA;
+    /* Duración de animaciones */
+    --animate-duration: 400ms;
     color: var(--dark);
 }
 body,html{
@@ -196,16 +198,25 @@ h2{
     background-color: var(--dark);
 }
 .step.active{
-    animation: 1s BigToSmall;
+    animation: var(--animate-duration) BigToSmall;
     width: 30px;
 }
 .step:not(.active){
-    animation: 200ms SmallToBig;
+    animation: var(--animate-duration) SmallToBig;
     width: 10px;
 }
+.capa{
+    position: absolute;
+    left: 10%;
+}
 .capa:not(.visible){
+    animation: var(--animate-duration) RigthToLeft;
     display: none;
 }
 .capa.visible{
+    animation: var(--animate-duration) LeftToRigth;
     display: block;
+}
+.h-150{
+    height: 150px;
 }

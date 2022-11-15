@@ -18,3 +18,19 @@
         width: 10px;
     }
 }
+@keyframes RigthToLeft {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+@keyframes LeftToRigth {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 10%;
+    }
+}
