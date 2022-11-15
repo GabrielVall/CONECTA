@@ -73,7 +73,7 @@ body,html{
     font-size: 27px;
     font-family: 'bold';
 }
-.main_color{
+bold{
     color: var(--main-color);
     font-family: 'bold';
 }

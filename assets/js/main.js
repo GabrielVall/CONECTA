@@ -1,11 +1,10 @@
-function cambiarPantalla(){
-    $('.screen,.new_screen').toggleClass('screen new_screen');
-    $('.change_screen').removeClass('change_screen');
-    $('.new_screen').addClass('change_screen');
-}
-$(function() {
+$( async function() {
     $('.new_screen').addClass('change_screen');
 
+    const idioma = 'esp';
+    let json = await getJson('assets/json/idioma_config.json');
+    cargarIdioma(idioma,json);
+    
     $( ".next_btn" ).click(function() {
         var selector = $('.step.active');
         selector.removeClass('active');
