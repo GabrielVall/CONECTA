@@ -1,8 +1,9 @@
 {
     "idiomas": [
         {
-            "español": {
-                "codigo": 1,
+            "esp": {
+                "nombre": "Español",
+                "codigo": "ESP",
                 "charset":  "UTF-8",
                 "titulo1": "Comparte tus proyectos <bold>Facilmente</bold>",
                 "descripcion1": "Obtén control de tus datos rápidamente.",
@@ -11,8 +12,9 @@
                 "titulo3": "Manten tu información completamente segura.",
                 "descripcion3": "Ciframos la información para que solo los integrantes del equipo puedan verla."
             },
-            "ingles":{
-                "codigo": 1,
+            "eng":{
+                "nombre": " Ingles",
+                "codigo": "ENG",
                 "charset":  "UTF-8",
                 "titulo1": "Share your projects <bold>Easily</bold>",
                 "descripcion1": "Get control of your data quickly.",
