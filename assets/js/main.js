@@ -14,6 +14,9 @@ $(function() {
         }else{
             $('.step').first().addClass('active');
         }
+        var num = $('.step.active').data('num');;
+        $('.capa').removeClass('visible');
+        $('.capa[data-num="'+num+'"]').addClass('visible');
     });
 
 });
