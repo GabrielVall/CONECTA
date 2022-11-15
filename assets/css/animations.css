@@ -2,3 +2,19 @@
     0%   {left: 200%;}
     100% {left: 0%;}
 }
+@keyframes BigToSmall {
+    0%{
+        width: 10px;
+    }
+    100%{
+        width: 30px;
+    }
+}
+@keyframes SmallToBig {
+    0%{
+        width: 30px;
+    }
+    100%{
+        width: 10px;
+    }
+}

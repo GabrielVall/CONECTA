@@ -90,7 +90,7 @@ body,html{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 60px;
+    width: fit-content;
     margin-top: 10px;
 }
 .step{
@@ -98,6 +98,8 @@ body,html{
     height: 10px;
     background-color: var(--border-semi-bold);
     border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .step.active{
     background-color: var(--main-color);
@@ -189,4 +191,12 @@ h2{
 }
 .bg_default{
     background-color: var(--dark);
+}
+.step.active{
+    animation: 1s BigToSmall;
+    width: 30px;
+}
+.step:not(.active){
+    animation: 200ms SmallToBig;
+    width: 10px;
 }

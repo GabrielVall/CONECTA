@@ -5,4 +5,15 @@ function cambiarPantalla(){
 }
 $(function() {
     $('.new_screen').addClass('change_screen');
+
+    $( ".next_btn" ).click(function() {
+        var selector = $('.step.active');
+        selector.removeClass('active');
+        if( selector.next().is('.step') ){
+            selector.next().addClass('active');
+        }else{
+            $('.step').first().addClass('active');
+        }
+    });
+
 });
