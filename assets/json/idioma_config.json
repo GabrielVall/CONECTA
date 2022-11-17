@@ -1,18 +1,16 @@
 {
     "esp": {
         "nombre": "Español",
-        "codigo": "ESP",
         "charset":  "UTF-8",
-        "titulo1": "Comparte tus proyectos <bold>Facilmente</bold>",
+        "titulo1": "Crea tus proyectos <bold>Facilmente</bold>",
         "descripcion1": "Obtén control de tus datos rápidamente.",
-        "titulo2": "<bold>CONECTA</bold> tus proyectos a internet",
+        "titulo2": "<bold>CONECTA</bold> tus prototipos a internet",
         "descripcion2": "Sube tu proyecto a la nube en pocos pasos.",
-        "titulo3": "Manten tu información <bold>100%</bold> segura.",
+        "titulo3": "Información <bold>100%</bold> segura.",
         "descripcion3": "Ciframos la información para que solo los integrantes del equipo puedan verla."
     },
     "eng":{
         "nombre": "Ingles",
-        "codigo": "ENG",
         "charset":  "UTF-8",
         "titulo1": "Share your projects <bold>Easily</bold>",
         "descripcion1": "Get control of your data quickly.",

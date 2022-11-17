@@ -34,6 +34,7 @@ body,html{
     position: absolute;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 .new_screen{
     left:200%;
@@ -41,6 +42,7 @@ body,html{
     position: absolute;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 .change_screen{
     animation: 1s swap;
@@ -132,7 +134,9 @@ bold{
     flex-wrap: wrap;
 }
 .next_btn svg{
-    fill: white;;
+    fill: white;
+    width: 40px;
+    height: 40px;
 }
 .next_btn_border{
     display: flex;

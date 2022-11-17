@@ -1,9 +1,11 @@
-$( async function() {
-    $('.new_screen').addClass('change_screen');
+$( async function() {   
+    var inicio = obtenerVista();
+    $('.new_screen').html(inicio);
+    cambiarPantalla();
 
-    const idioma = 'esp';
-    let json = await getJson('assets/json/idioma_config.json');
-    cargarIdioma(idioma,json);
+    // const idioma = 'esp';
+    // let json = await getJson('assets/json/idioma_config.json');
+    // cargarIdioma(idioma,json);
     
     $( ".next_btn" ).click(function() {
         var selector = $('.step.active');
