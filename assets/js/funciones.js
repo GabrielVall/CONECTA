@@ -12,16 +12,20 @@ function obtenerVista(url){ // Función para obtener una vista mediante una peti
 }
 async function cambiarPantalla(vista){
     var contenido = await obtenerVista(vista); //Traemos la vista inicial
-    if( !$('.screen').is('.showing') ){ // Si screen ya esta mostrada tomaremos el otro div 
-        $('.screen').html(contenido).addClass('showing');
+    if( $('.showing2').length > 0 ){ // Si no hay ningun elemento showin
+        if( $('.new_screen').is('.showing2') ){ // Si la nueva pantalla quedo atras
+            $('.new_screen').removeClass('showing2').addClass('showing');
+            $('.screen').html(contenido).removeClass('showing').addClass('showing2');
+            
+        }else{
+            $('.screen').removeClass('showing2').addClass('showing');
+            $('.new_screen').html(contenido).removeClass('showing').addClass('showing2');
+        }
         setTimeout(function(){
-            $('.new_screen').removeClass('showing2');
-        },400);
+            $('.showing').removeClass('showing');
+        },400)
     }else{
         $('.new_screen').html(contenido).addClass('showing2');
-        setTimeout(function(){
-            $('.screen').removeClass('showing');
-        },400);
     }
 }
 function getJson(url,tipo = 'GET', content = 'application/json;charset=UTF-8'){ // Obtener un JSON mediante una petición

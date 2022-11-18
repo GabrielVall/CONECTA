@@ -1,5 +1,5 @@
 $( async function() {   // Al cargar la página
-    
+
     cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
 
     const idioma = 'esp'; //Idioma por defecto
@@ -15,7 +15,7 @@ $( async function() {   // Al cargar la página
             $('.capa').removeClass('visible'); // Ocultamos todas las capas
             $('.capa[data-num="'+num+'"]').addClass('visible'); // Mostramos la capa con el mismo numero del paso
         }else{ 
-            cambiarPantalla('crear_cuenta'); // Cargamos una nueva vista
+            cambiarPantalla('vista_sensor'); // Cargamos una nueva vista
         }
     });
 });
