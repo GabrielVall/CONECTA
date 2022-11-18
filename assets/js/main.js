@@ -3,11 +3,11 @@ $( async function() {
     $('.new_screen').html(inicio);
     cambiarPantalla();
 
-    // const idioma = 'esp';
-    // let json = await getJson('assets/json/idioma_config.json');
-    // cargarIdioma(idioma,json);
+    const idioma = 'esp';
+    let json = await getJson('assets/json/idioma_config.json');
+    cargarIdioma(idioma,json);
     
-    $( ".next_btn" ).click(function() {
+    $(document).on('click', '.next_btn',function(){
         var selector = $('.step.active');
         selector.removeClass('active');
         if( selector.next().is('.step') ){
@@ -15,7 +15,7 @@ $( async function() {
         }else{
             $('.step').first().addClass('active');
         }
-        var num = $('.step.active').data('num');;
+        var num = $('.step.active').data('num');
         $('.capa').removeClass('visible');
         $('.capa[data-num="'+num+'"]').addClass('visible');
     });

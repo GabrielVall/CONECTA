@@ -42,9 +42,9 @@ function getJson(url){
 function cargarIdioma(idioma,arreglo){
     var textos = arreglo[idioma];
     $('[data-num="1"] .titulo').html(textos.titulo1);
-    $('[data-num="1"] .descripcion1').html(textos.descripcion);
+    $('[data-num="1"] .desc').html(textos.descripcion1);
     $('[data-num="2"] .titulo').html(textos.titulo2);
-    $('[data-num="2"] .descripcion1').html(textos.descripcion2);
+    $('[data-num="2"] .desc').html(textos.descripcion2);
     $('[data-num="3"] .titulo').html(textos.titulo3);
-    $('[data-num="3"] .descripcion1').html(textos.descripcion3);
+    $('[data-num="3"] .desc').html(textos.descripcion3);
 }
