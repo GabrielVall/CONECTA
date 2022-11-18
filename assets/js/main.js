@@ -1,6 +1,6 @@
 $( async function() {   // Al cargar la página
 
-    var inicio = await obtenerVista('php/view/inicio.html'); //Traemos la vista inicial
+    var inicio = await obtenerVista('php/views/inicio.html'); //Traemos la vista inicial
     $('.new_screen').html(inicio); //Imprimimos en el div de vista
     cambiarPantalla(); //Cambiamos a la nueva vista
 
