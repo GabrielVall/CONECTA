@@ -1,5 +1,6 @@
 const _MENSAJE_ERROR = 'Error interno, porfavor intente más tarde';
 function obtenerVista(url){ // Función para obtener una vista mediante una petición
+    url = 'php/views/' + url + '.html'; // Asignamos la carpeta donde almacenamos la vista
     return new Promise(resolve => { // Creamos una promesa para pausar el codigo hasta a que la funcion termine de ejecutarse
         fetch(url).then(function(contenido) { // Traemos el contenido de la petición
             resolve(contenido.text()); // Retornamos el texto de la petición
@@ -9,8 +10,19 @@ function obtenerVista(url){ // Función para obtener una vista mediante una peti
         });
     });
 }
-function cambiarPantalla(){
-    $('.new_screen').addClass('change_screen');
+async function cambiarPantalla(vista){
+    var contenido = await obtenerVista(vista); //Traemos la vista inicial
+    if( !$('.screen').is('.showing') ){ // Si screen ya esta mostrada tomaremos el otro div 
+        $('.screen').html(contenido).addClass('showing');
+        setTimeout(function(){
+            $('.new_screen').removeClass('showing2');
+        },400);
+    }else{
+        $('.new_screen').html(contenido).addClass('showing2');
+        setTimeout(function(){
+            $('.screen').removeClass('showing');
+        },400);
+    }
 }
 function getJson(url,tipo = 'GET', content = 'application/json;charset=UTF-8'){ // Obtener un JSON mediante una petición
     return new Promise(resolve => { // Creamos una promesa para pausar el codigo hasta a que la funcion termine de ejecutarse

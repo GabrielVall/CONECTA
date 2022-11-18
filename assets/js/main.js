@@ -1,8 +1,6 @@
 $( async function() {   // Al cargar la página
-
-    var inicio = await obtenerVista('php/views/inicio.html'); //Traemos la vista inicial
-    $('.new_screen').html(inicio); //Imprimimos en el div de vista
-    cambiarPantalla(); //Cambiamos a la nueva vista
+    
+    cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
 
     const idioma = 'esp'; //Idioma por defecto
     let json = await getJson('assets/json/idioma_config.json'); //Obtenemos el json de idiomas
@@ -17,8 +15,7 @@ $( async function() {   // Al cargar la página
             $('.capa').removeClass('visible'); // Ocultamos todas las capas
             $('.capa[data-num="'+num+'"]').addClass('visible'); // Mostramos la capa con el mismo numero del paso
         }else{ 
-            // $('.step').first().addClass('active'); // Quitamos
+            cambiarPantalla('crear_cuenta'); // Cargamos una nueva vista
         }
     });
-
 });
