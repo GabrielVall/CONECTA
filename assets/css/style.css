@@ -239,7 +239,7 @@ h2{
     display: inline-block;
     position: relative;
     border: 3px solid;
-    border-color: #FFF #FFF transparent transparent;
+    border-color: var(--main-color) var(--main-color) transparent transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
   }
@@ -254,7 +254,7 @@ h2{
     bottom: 0;
     margin: auto;
     border: 3px solid;
-    border-color: transparent transparent #FF3D00 #FF3D00;
+    border-color: transparent transparent var(--secondary-color) var(--secondary-color);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -265,7 +265,7 @@ h2{
   .loader::before {
     width: 32px;
     height: 32px;
-    border-color: #FFF #FFF transparent transparent;
+    border-color: var(--main-color) var(--main-color) transparent transparent;
     animation: rotation 1.5s linear infinite;
   }
       
