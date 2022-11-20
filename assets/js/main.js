@@ -1,6 +1,8 @@
 $( async function() {   // Al cargar la página
-
-    cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
+    setTimeout(function(){
+        // cambiarPantalla('vista_sensor'); // Cargamos una nueva vista
+    },2000);
+    // cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
 
     const idioma = 'esp'; //Idioma por defecto
     let json = await getJson('assets/json/idioma_config.json'); //Obtenemos el json de idiomas
