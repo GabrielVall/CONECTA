@@ -3,7 +3,7 @@ class SQLConexion{
     public $conexion;
     private $server='localhost'; // Nombre del serviodr
     private $usuario='utnc_conecta'; // Usuario del servidor
-    private $clave='hAElhf64gvR,'; // Contraseña
+    private $clave='1dF=[9+%mku['; // Contraseña
     private $bd='utnc_conecta'; // Nombre de la base de datos
     
     public function conectar(){ // Conectamos a la base de datos
