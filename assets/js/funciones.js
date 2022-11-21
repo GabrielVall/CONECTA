@@ -79,4 +79,7 @@ async function infoSensor(){
             </tr>`;
     }
     $('#data_body').html(tabla);
+    setTimeout(function(){
+        infoSensor();
+    },1500);
 }
