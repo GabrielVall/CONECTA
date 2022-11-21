@@ -1,7 +1,8 @@
 $( async function() {   // Al cargar la página
-    setTimeout(function(){
-        cambiarPantalla('vista_sensor'); // Cargamos una nueva vista
-    },2000);
+    // setTimeout( async function(){
+        await cambiarPantalla('vista_sensor'); // Cargamos una nueva vista
+        infoSensor();
+    // },2000);
     // cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
 
     const idioma = 'esp'; //Idioma por defecto

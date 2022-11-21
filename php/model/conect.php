@@ -27,7 +27,6 @@ class SQLConexion{
         $Resultado=$this->conexion->query($QueryString); //Ejecucion del Query
         $Datos=array(); //Declaracion Array donde almacenaremos nuestros datos
         $i=0;
-
         while($fila=$Resultado->fetch_array()){
             $Datos[$i]=$fila;
             $i++;

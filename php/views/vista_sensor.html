@@ -1,62 +1,95 @@
 <div class="pantalla_inicio">
-            <div class="header_screen">
-                <h2>Proyecto ESP + BMP280</h2>
-            </div>
-            <div class="body_screen">
-                <div class="cards">
-                    <div class="card bg_main">
-                        <div class="top_card">
-                            Sensor BME 280
-                        </div>
-                        <div class="card_title">
-                            Temperatura
-                        </div>
-                        <div class="card_data">
-                            60 C°
-                        </div>
-                    </div>
-                    <div class="card bg_danger">
-                        <div class="top_card">
-                            Sensor BME 280
-                        </div>
-                        <div class="card_title">
-                            Humedad
-                        </div>
-                        <div class="card_data">
-                            20 %
-                        </div>
-                    </div>
-                    <div class="card bg_default">
-                        <div class="top_card">
-                            Sensor BME 280
-                        </div>
-                        <div class="card_title">
-                            Temperatura
-                        </div>
-                        <div class="card_data">
-                            1200 PA
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="last_update">
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>#ID</th>
-                            <th>Equipo</th>
-                            <th>Temp</th>
-                            <th>Hum</th>
-                            <th>PA</th>
-                          </tr>
-                          <tr>
-                            <td>0</td>
-                            <td>Docente</td>
-                            <td>20 °C</td>
-                            <td>20%</td>
-                            <td>1200</td>
-                          </tr>
-                    </table>
-                </div>
-            </div>
+    <div class="header_screen">
+       <h2>Proyecto ESP + BMP280</h2>
+    </div>
+    <!-- <div class="body_screen">
+       <div class="cards">
+          <div class="card bg_main">
+             <div class="top_card">
+                Sensor BME 280
+             </div>
+             <div class="card_title">
+                Temperatura
+             </div>
+             <div class="card_data">
+                60 C°
+             </div>
+          </div>
+          <div class="card bg_danger">
+             <div class="top_card">
+                Sensor BME 280
+             </div>
+             <div class="card_title">
+                Humedad
+             </div>
+             <div class="card_data">
+                20 %
+             </div>
+          </div>
+          <div class="card bg_default">
+             <div class="top_card">
+                Sensor BME 280
+             </div>
+             <div class="card_title">
+                Temperatura
+             </div>
+             <div class="card_data">
+                1200 PA
+             </div>
+          </div>
+       </div>
+    </div> -->
+    <div class="body_screen">
+        <div class="cards">
+           <div class="card bg_main">
+              <div class="top_card">
+                 Sensor BME 280
+              </div>
+              <div class="card_title">
+                 Temperatura
+              </div>
+              <div class="card_data">
+                 <span id="temperatura"></span> C°
+              </div>
+           </div>
+           <div class="card bg_danger">
+              <div class="top_card">
+                 Sensor BME 280
+              </div>
+              <div class="card_title">
+                 Humedad
+              </div>
+              <div class="card_data">
+                 <span id="humedad"></span>
+              </div>
+           </div>
+           <div class="card bg_default">
+              <div class="top_card">
+                 Sensor BME 280
+              </div>
+              <div class="card_title">
+                 Presión
+              </div>
+              <div class="card_data">
+                 <span id="presion"></span>
+              </div>
+           </div>
         </div>
+     </div>
+    <div class="last_update">
+       <div class="table">
+          <table>
+             <tr>
+                <th>#ID</th>
+                <th>Equipo</th>
+                <th>Temp</th>
+                <th>Hum</th>
+                <th>PA</th>
+             </tr>
+             <tbody id="data_body">
+
+             </tbody>
+          </table>
+       </div>
+    </div>
+ </div>

@@ -191,6 +191,9 @@ h2{
     color: white;
     padding:10px 0 10px 10px;
 }
+.card_data span{
+    color: var(--white);
+}
 .bg_main{
     background-color: var(--main-color);
 }
