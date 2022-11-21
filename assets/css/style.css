@@ -294,3 +294,14 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
 }
+.table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+table{
+    text-align: left;
+    width: 90%;
+    font-size: 12px;
+}
