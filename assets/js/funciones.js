@@ -56,20 +56,27 @@ function cargarIdioma(idioma,arreglo){ // Función para mostrar textos en el idi
 
 async function infoSensor(){
     var info = await getJson('php/controllers/datos_sensor.php');
-    data = JSON.parse(info.datos);
-    var tabla = '';
-    $('#temperatura').html(data[0]['temperatura']);
-    $('#humedad').html(data[0]['humedad']);
-    $('#presion').html(data[0]['presion']);
-    for (var i = 0; i < data.length; i++) {
-        tabla = tabla + 
-        `<tr>
-            <td>${data[i]['id_datos']}</td>
-            <td>${data[i]['equipo']}</td>
-            <td>${data[i]['temperatura']}</td>
-            <td>${data[i]['humedad']}</td>
-            <td>${data[i]['presion']}</td>
-        </tr>`;
+    if(info.status == "success"){
+        data = JSON.parse(info.datos);
+        var tabla = '';
+        $('#temperatura').html(data[0]['temperatura']);
+        $('#humedad').html(data[0]['humedad']);
+        $('#presion').html(data[0]['presion']);
+        for (var i = 0; i < data.length; i++) {
+            tabla = tabla + 
+            `<tr>
+                <td>${data[i]['id_datos']}</td>
+                <td>${data[i]['equipo']}</td>
+                <td>${data[i]['temperatura']}</td>
+                <td>${data[i]['humedad']}</td>
+                <td>${data[i]['presion']}</td>
+            </tr>`;
+        }
+    }else{
+        tabla = 
+            `<tr>
+                <td colspan="5" style="text-align:center;">No hay datos registrados</td>
+            </tr>`;
     }
     $('#data_body').html(tabla);
 }
