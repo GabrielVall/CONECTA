@@ -2,9 +2,9 @@
 class SQLConexion{
     public $conexion;
     private $server='localhost'; // Nombre del serviodr
-    private $usuario='root'; // Usuario del servidor
-    private $clave=''; // Contraseña
-    private $bd='conecta'; // Nombre de la base de datos
+    private $usuario='utnc_conecta'; // Usuario del servidor
+    private $clave='HG*+K1P_9n)2'; // Contraseña
+    private $bd='utnc_conecta'; // Nombre de la base de datos
     
     public function conectar(){ // Conectamos a la base de datos
         $this->conexion=@new mysqli($this->server,$this->usuario,$this->clave,$this->bd);
