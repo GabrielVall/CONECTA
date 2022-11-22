@@ -1,9 +1,5 @@
-$( async function() {   // Al cargar la página
-    // setTimeout( async function(){
-        await cambiarPantalla('vista_sensor'); // Cargamos una nueva vista
-        infoSensor();
-    // },2000);
-    // cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
+$( async function() {
+    cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
 
     const idioma = 'esp'; //Idioma por defecto
     let json = await getJson('assets/json/idioma_config.json'); //Obtenemos el json de idiomas
@@ -18,7 +14,7 @@ $( async function() {   // Al cargar la página
             $('.capa').removeClass('visible'); // Ocultamos todas las capas
             $('.capa[data-num="'+num+'"]').addClass('visible'); // Mostramos la capa con el mismo numero del paso
         }else{ 
-            cambiarPantalla('vista_sensor'); // Cargamos una nueva vista
+            cambiarPantalla('vista_sensor');
         }
     });
 });
