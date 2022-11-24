@@ -1,6 +1,6 @@
 $( async function() {
-    cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
-
+    //cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
+    cambiarPantalla('login');
     const idioma = 'esp'; //Idioma por defecto
     let json = await getJson('assets/json/idioma_config.json'); //Obtenemos el json de idiomas
     cargarIdioma(idioma,json); // Cargamos la configuración de idioma
@@ -14,7 +14,7 @@ $( async function() {
             $('.capa').removeClass('visible'); // Ocultamos todas las capas
             $('.capa[data-num="'+num+'"]').addClass('visible'); // Mostramos la capa con el mismo numero del paso
         }else{ 
-            cambiarPantalla('vista_sensor');
+            
         }
     });
 });
