@@ -1,6 +1,6 @@
 $( async function() {
     //cambiarPantalla('inicio'); //Cambiamos a la vista al cargar
-    cambiarPantalla('login');
+    cambiarPantalla('tipo_cuenta');
     const idioma = 'esp'; //Idioma por defecto
     let json = await getJson('assets/json/idioma_config.json'); //Obtenemos el json de idiomas
     cargarIdioma(idioma,json); // Cargamos la configuración de idioma

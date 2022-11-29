@@ -695,3 +695,263 @@ table{
 .txt_footer_login>span{
     color: #5690FF;
 }
+
+.pantalla_tipo_cuenta{
+    width: 100%;
+    height: 100%;
+    background-color: #DEEAFF;
+}
+
+.titulo_tc{
+    position: absolute;
+    left: 36px;
+    top: 56px;
+
+    width: 302px;
+    height: 82px;
+
+    /* Title */
+
+    font-family: 'bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+
+    color: #515151;
+}
+
+.titulo_tc>span{
+    font-family: 'bold';
+    color: #7087FF;
+}
+
+.header_tc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 2em 0;
+}
+
+.buttons_tc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 2em 0;
+}
+
+.btn_estudiante{
+    padding: 12px 80px 12px 80px;
+    border-radius: 10px;
+    margin: 130px 0 0 37px;
+    border-color: transparent;
+
+    font-family: 'bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    background-color: #5690FF;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.graduation-cap{
+    position: absolute;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    margin-top: 161px;
+    margin-left: 62px;
+    fill: #FFFFFF;
+}
+
+/* .btn_estudiante:active{
+    color: #FFFFFF;
+    background-color: #5690FF;
+}
+
+.graduation-cap:active{
+    fill: #FFFFFF;
+} */
+
+.btn_empresa{
+    padding: 12px 93px 12px 93px;
+    border-radius: 10px;
+    margin: 31px 0 0 37px;
+    border-color: transparent;
+
+    font-family: 'bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #5690FF;
+    text-decoration: none;
+
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.industry-icon{
+    position: absolute;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    margin-top: 63px;
+    margin-left: 62px;
+    fill: #5690FF;
+}
+
+.btn_maestro{
+    padding: 12px 96px 12px 96px;
+    border-radius: 10px;
+    margin: 31px 0 0 37px;
+    border-color: transparent;
+
+    font-family: 'bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #5690FF;
+    text-decoration: none;
+
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.school-icon{
+    position: absolute;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    margin-top: 63px;
+    margin-left: 62px;
+    fill: #5690FF;
+}
+
+.final_tc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rectangulo_tc{
+    position: absolute;
+    width: 375px;
+    height: 220px;
+    left: 0px;
+    top: 450px;
+
+    background: #FFFFFF;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.input_tn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team_name{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 67.69%;
+
+    margin: 0 0 0 37px;
+    
+    font-family: 'main';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.people-icon{
+    position: absolute;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    margin-top: 19px;
+    margin-left: 50px;
+    fill: #858585;
+}
+
+.label-input-tn{
+    padding: 10px 70px 10px 50px;
+    text-decoration: none;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    border-color: #EFEFEF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    margin: 52px 0 20px 37px;
+
+    color: #858585;
+
+    border-style: none;
+}
+
+.btn_ce{
+    padding: 5px 82px 5px 82px;
+    border-radius: 10px;
+    margin: 160px 0 10px 36px;
+
+    font-family: 'main';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    background-color: #5690FF;
+}
+
+.btn_yte{
+    padding: 5px 66px 5px 65px;
+    border-radius: 10px;
+    margin: 160px 0 0 36px;
+
+    font-family: 'main';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #5690FF;
+    text-decoration: none;
+
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+}
